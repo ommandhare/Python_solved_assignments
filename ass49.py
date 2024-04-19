@@ -17,7 +17,7 @@ for i in range(n):
             a[j + 1] = temp
 
 
-print("\n descending sorted list (bubble sort) \n")
+print("\n descending sorted list\n")
 
 for result in a:
     print(result)

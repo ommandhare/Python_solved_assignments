@@ -3,12 +3,12 @@ get a character from user and check if the character is number or vovel or conco
 
 """
 
-str=input("enter the character: ")
-vowelList=["a","e","i","o","u"]
-numList=["0","1","2","3","4","5","6","7","8","9"]
-if str in vowelList :
-    print("character is vowel")
-elif str in numList:
-    print("character is number")
+c=input("enter the character: ")
+
+
+if  c in ['a','e','i','o','u']:
+    print("Vowel")
+elif c.isdigit():
+    print("number")
 else:
-    print("character is consonent")
+    print("consonant")

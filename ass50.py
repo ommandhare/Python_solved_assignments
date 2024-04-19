@@ -1,17 +1,23 @@
 """
-get a list a = [2,3,4,55,33,4,55,343,66,77,88,99] and write a program to find list of non adjacent numbers of every number.
+get a list a = [2,3,4,55,33,4,55,343,66,77,88,99]
+write a program to find list of non adjacent numbers of every number.
 
 """
 
-class Solution:
-   def solve(self, nums):
-      if len(nums) <= 2:
-         return max(nums)
-      noTake = 0
-      take = nums[0]
-      for i in range(1, len(nums)):
-         take, noTake = noTake + nums[i], max(noTake, take)
-         return max(noTake, take)
-ob = Solution()
-nums = [3, 5, 7, 3, 6]
-print(ob.solve(nums))
+a = [1,2,3,4,5,6,7]
+nonAdjacent = {}
+
+for i in range(len(a)):
+    for j in range(len(a)):
+        if(j == i-1 or j==i or j== i+1):
+            continue
+        elif(a[i] not in nonAdjacent):
+            nonAdjacent[a[i]]=[a[j]]
+        else:
+            if a[j] not in nonAdjacent[a[i]]:
+             nonAdjacent[a[i]].append(a[j])
+
+
+
+print(nonAdjacent)
+

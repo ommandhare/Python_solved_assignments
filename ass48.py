@@ -1,5 +1,6 @@
 """
-start with a hard coded list a = [3,4,5,86,34,2,3,4,7,33,44,66,88,34,32,11,22] and write a program (bubble sort) to sort the list in ascending order - bubble sort
+start with a hard coded list a = [3,4,5,86,34,2,3,4,7,33,44,66,88,34,32,11,22]
+and write a program (bubble sort) to sort the list in ascending order - bubble sort
 
 """
 
@@ -17,7 +18,7 @@ for i in range(n):
             a[j + 1] = temp
 
 
-print("\naesceding sorted list (bubble sort)\n")
+print("\naesceding sorted list\n")
 
 for result in a:
     print(result)
